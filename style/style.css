@@ -1,0 +1,90 @@
+
+/* importation des fonts */
+
+
+/* normal */
+@font-face {
+    font-family: 'formula1display-regular';
+    src: url('font/f1-normal/ormula1-regular-webfont.woff2') format('woff2'),
+         url('font/f1-normal/formula1-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'formula1display-bold';
+    src: url('font/f1-bold/formula1-bold-webfont.woff2') format('woff2'),
+         url('font/f1-bold/formula1-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* animation caroussel */
+
+
+body{
+    background-color: black;
+    margin:0 auto;
+}
+
+
+/* nav bar */
+
+.nav-bar-phone{
+    display: none; 
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style:none;
+    height: 100vh;
+
+}
+
+nav.nav img{
+    height: 40px;
+}
+
+nav.nav a{
+    text-decoration: none;
+
+}
+
+nav.nav li{
+    color:white;
+    font-size: 20px;
+    font-family: 'formula1display-regular';
+    text-decoration: none;
+}
+
+@media screen and (max-width:950px){
+
+    .nav-bar-pc{
+        display: none;
+    }
+
+    .nav-bar-phone{
+        display: inherit;
+    }
+
+    .nav{
+        flex-direction: column;
+        text-align: center;
+        gap: 40px
+    }
+    
+    section.landing-page img{
+        height: 70vh;
+        width: auto;
+        
+    }
+    .main-img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
